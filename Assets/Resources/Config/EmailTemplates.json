@@ -1,0 +1,16 @@
+{
+    "templates": [
+        {
+            "taskType": "DO_MATHS"
+        },
+        {
+            "taskType": "CREATE_TEXT_DOCUMENT"
+        },
+        {
+            "taskType": "EDIT_IMAGE"
+        },
+        {
+            "taskType": "SPAM"
+        }
+    ]
+}
