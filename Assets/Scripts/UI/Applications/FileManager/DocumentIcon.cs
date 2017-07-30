@@ -9,7 +9,11 @@ namespace LD39.UI.Applications
     public class DocumentIcon : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         public Image appBG;
+        public Image appIcon;
         public Text appText;
+
+        public Sprite writePadIcon;
+        public Sprite scribblerIcon;
 
         public bool hasFocus;
 
@@ -24,6 +28,19 @@ namespace LD39.UI.Applications
         public void Setup(Document doc, FileManager fileManager, Action<Document> clickAction = null)
         {
             appText.text = doc.name;
+
+            switch (doc.type)
+            {
+                case DocumentType.BMP:
+                case DocumentType.PNG:
+                case DocumentType.JPG:
+                    appIcon.sprite = scribblerIcon;
+                    break;
+                case DocumentType.DOC:
+                case DocumentType.TXT:
+                    appIcon.sprite = writePadIcon;
+                    break;
+            }
 
             this.doc = doc;
             this.clickAction = clickAction;

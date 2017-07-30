@@ -1408,8 +1408,8 @@ MonoBehaviour:
   appToOpen: {fileID: 1458362382392738, guid: a9c7ae7038f679f4cbc596ba9d17f9d0, type: 2}
   appBG: {fileID: 795725079}
   appText: {fileID: 934418854}
-  windowWidth: 640
-  windowHeight: 480
+  windowWidth: 480
+  windowHeight: 360
   resizable: 1
   hasFocus: 0
 --- !u!114 &795725079

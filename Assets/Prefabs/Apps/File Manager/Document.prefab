@@ -135,7 +135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appBG: {fileID: 114316261603893378}
+  appIcon: {fileID: 114850610835584386}
   appText: {fileID: 114365796876895212}
+  writePadIcon: {fileID: 21300000, guid: 76d1ec2af585ed04b857680e31aea9f3, type: 3}
+  scribblerIcon: {fileID: 21300000, guid: 725e2f43bfc066d4d98332e804706fa8, type: 3}
   hasFocus: 0
 --- !u!114 &114850610835584386
 MonoBehaviour:
